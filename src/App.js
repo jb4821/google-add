@@ -5,12 +5,12 @@ import './App.css';
 import logo from './logo.svg';
 
 function Home() {
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
 
-  useEffect(() => {
-    // Redirect to /app-ads.txt immediately
-    navigate('/app-ads.txt');
-  }, [navigate]);
+  // useEffect(() => {
+  //   // Redirect to /app-ads.txt immediately
+  //   navigate('/app-ads.txt');
+  // }, [navigate]);
 
   return (
     <div className="App">
@@ -30,7 +30,7 @@ function App() {
     <Router>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/app-ads.txt" element={<AppAdsTxt />} />
+        {/* <Route path="/app-ads.txt" element={<AppAdsTxt />} /> */}
       </Routes>
     </Router>
   );
